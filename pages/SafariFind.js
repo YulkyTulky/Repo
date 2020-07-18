@@ -5,7 +5,7 @@ export default function SafariFind() {
 		<Depiction
 			name="SafariFind"
 			github="https://github.com/YulkyTulky/SafariFind"
-			subtitle="lowercase all visible text everywhere on your iphone!"
+			subtitle="Easily access Safari's find feature!"
 		>
 			
 			<p>
