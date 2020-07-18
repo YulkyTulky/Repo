@@ -21,7 +21,9 @@ exports.packages = [
 	"https://github.com/YulkyTulky/lower/releases/download/v1.1/com.yulkytulky.lower_1.1_iphoneos-arm.deb",
 
 	"https://github.com/YulkyTulky/Lowercase-App-Names/releases/download/v1.0/com.yulkytulky.lowercaseappnames_1.0_iphoneos-arm.deb",
-	"https://github.com/YulkyTulky/Lowercase-App-Names/releases/download/v1.1/com.yulkytulky.lowercaseappnames_1.1_iphoneos-arm.deb"
+	"https://github.com/YulkyTulky/Lowercase-App-Names/releases/download/v1.1/com.yulkytulky.lowercaseappnames_1.1_iphoneos-arm.deb",
+
+	"https://github.com/YulkyTulky/TapTapTipTapTime/releases/download/v1.0/com.yulkytulky.taptaptiptaptime_1.0_iphoneos-arm.deb"
 
 	
 ]
@@ -34,5 +36,6 @@ exports.icons = {
 	"rEkT--": "assets/rEkT--/icon.png",
 	lower: "assets/lower/icon.png",
 	"Lowercase App Names": "assets/Lowercase-App-Names/icon.png",
-	ShyDate: "assets/ShyDate/icon.png"
+	ShyDate: "assets/ShyDate/icon.png",
+	TapTapTipTapTime: "assets/TapTapTipTapTime/icon.png"
 }
