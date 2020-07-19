@@ -43,5 +43,5 @@ exports.icons = {
 	ShyDate: "assets/ShyDate/icon.png",
 	TapTapTipTapTime: "assets/TapTapTipTapTime/icon.png",
 	SafariFind: "assets/SafariFind/icon.png",
-	SafariFind: "assets/NotesFind/icon.png"
+	NotesFind: "assets/NotesFind/icon.png"
 }
