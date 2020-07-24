@@ -2,10 +2,10 @@ exports.name = "YulkyTulky"
 exports.description = "YulkyTulky's Tweak Repository"
 
 exports.packages = [
-	"https://github.com/YulkyTulky/Colorful-Lines/releases/download/v1.0.0/com.yulkytulky.colorfullines_1.0.0_iphoneos-arm.deb",
-	"https://github.com/YulkyTulky/Colorful-Lines/releases/download/v1.1/com.yulkytulky.colorfullines_1.1_iphoneos-arm.deb",
-	"https://github.com/YulkyTulky/Colorful-Lines/releases/download/v1.2/com.yulkytulky.colorfullines_1.2_iphoneos-arm.deb",
-	"https://github.com/YulkyTulky/Colorful-Lines/releases/download/v1.2.1/com.yulkytulky.colorfullines_1.2.1_iphoneos-arm.deb",
+	"https://github.com/YulkyTulky/ColorfulLines/releases/download/v1.0.0/com.yulkytulky.colorfullines_1.0.0_iphoneos-arm.deb",
+	"https://github.com/YulkyTulky/ColorfulLines/releases/download/v1.1/com.yulkytulky.colorfullines_1.1_iphoneos-arm.deb",
+	"https://github.com/YulkyTulky/ColorfulLines/releases/download/v1.2/com.yulkytulky.colorfullines_1.2_iphoneos-arm.deb",
+	"https://github.com/YulkyTulky/ColorfulLines/releases/download/v1.2.1/com.yulkytulky.colorfullines_1.2.1_iphoneos-arm.deb",
 
 	"https://github.com/YulkyTulky/Actify/releases/download/v1.2/com.yulkytulky.actify_1.2_iphoneos-arm.deb",
 
