@@ -27,7 +27,9 @@ exports.packages = [
 
 	"https://github.com/YulkyTulky/SafariFind/releases/download/v1.0/com.yulkytulky.safarifind_1.0_iphoneos-arm.deb",
 
-	"https://github.com/YulkyTulky/NotesFind/releases/download/v1.0/com.yulkytulky.notesfind_1.0_iphoneos-arm.deb"
+	"https://github.com/YulkyTulky/NotesFind/releases/download/v1.0/com.yulkytulky.notesfind_1.0_iphoneos-arm.deb",
+
+	"https://github.com/YulkyTulky/FLEXivator/releases/download/v1.0/com.yulkytulky.flexivator_1.0_iphoneos-arm.deb"
 
 	
 ]
@@ -43,5 +45,6 @@ exports.icons = {
 	ShyDate: "assets/ShyDate/icon.png",
 	TapTapTipTapTime: "assets/TapTapTipTapTime/icon.png",
 	SafariFind: "assets/SafariFind/icon.png",
-	NotesFind: "assets/NotesFind/icon.png"
+	NotesFind: "assets/NotesFind/icon.png",
+	FLEXivator: "assets/FLEXivator/icon.png"
 }

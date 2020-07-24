@@ -26,6 +26,10 @@ export default function TapTapTipTapTime() {
 					</ul> 
 				</li>
 			</ul>
+
+			<p>
+			Developed by YulkyTulky and DimitarNestorov.
+			</p>
 			
 		</Depiction>
 	)

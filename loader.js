@@ -1,24 +1,24 @@
-const crypto = require('crypto')
-const fs = require('fs')
-const path = require('path')
-const stream = require('stream')
+const crypto = require("crypto")
+const fs = require("fs")
+const path = require("path")
+const stream = require("stream")
 
-const ar = require('ar')
-const axios = require('axios')
-const gunzipMaybe = require('gunzip-maybe')
-const tar = require('tar-stream')
+const ar = require("ar")
+const axios = require("axios")
+const gunzipMaybe = require("gunzip-maybe")
+const tar = require("tar-stream")
 
-const { urlRegexp } = require('./utils')
+const { urlRegexp } = require("./utils")
 
 // Create node_modules/.cache folder
-const cacheFolder = path.join(__dirname, 'node_modules', '.cache')
+const cacheFolder = path.join(__dirname, "node_modules", ".cache")
 if (!fs.existsSync(cacheFolder)) {
 	fs.mkdirSync(cacheFolder)
 }
 
 // Load node_modules/.cache/urlsLoader.json
 const cacheVersion = 2
-const cacheFile = path.join(__dirname, 'node_modules', '.cache', 'urlsLoader.json')
+const cacheFile = path.join(__dirname, "node_modules", ".cache", "urlsLoader.json")
 function getCacheFileContents() {
 	const emptyCache = {
 		version: cacheVersion,
@@ -29,7 +29,7 @@ function getCacheFileContents() {
 		try {
 			const cacheFileContents = require(cacheFile)
 			if (cacheFileContents.version !== cacheVersion) return emptyCache
-			if (typeof cacheFileContents.cache !== 'object') return emptyCache
+			if (typeof cacheFileContents.cache !== "object") return emptyCache
 
 			return cacheFileContents
 		} catch (error) {
@@ -69,13 +69,13 @@ function extractControlTarGunzipMaybe(data) {
 
 		const extract = tar.extract()
 
-		extract.on('entry', function (header, stream, next) {
-			if (header.name === './control') {
+		extract.on("entry", function (header, stream, next) {
+			if (header.name === "./control") {
 				const data = []
-				stream.on('data', (chunk) => {
+				stream.on("data", (chunk) => {
 					data.push(chunk)
 				})
-				stream.on('end', function () {
+				stream.on("end", function () {
 					resolve(Buffer.concat(data).toString())
 				})
 				stream.resume()
@@ -84,8 +84,8 @@ function extractControlTarGunzipMaybe(data) {
 			}
 		})
 
-		extract.on('finish', function () {
-			reject(new Error('control file missing'))
+		extract.on("finish", function () {
+			reject(new Error("control file missing"))
 		})
 
 		readableStream.pipe(gunzipMaybe()).pipe(extract)
@@ -106,7 +106,7 @@ function convertControlToObject(control) {
 }
 
 async function getMetaForURL(url) {
-	const { data } = await axios.get(url, { responseType: 'arraybuffer' })
+	const { data } = await axios.get(url, { responseType: "arraybuffer" })
 
 	const archive = new ar.Archive(data)
 
@@ -114,12 +114,12 @@ async function getMetaForURL(url) {
 
 	for (const file of archive.getFiles()) {
 		const fileName = file.name()
-		if (fileName.startsWith('control.tar')) {
+		if (fileName.startsWith("control.tar")) {
 			Object.assign(meta, convertControlToObject(await extractControlTarGunzipMaybe(file.fileData())))
-		} else if (fileName.startsWith('data.tar') || fileName === 'debian-binary') {
+		} else if (fileName.startsWith("data.tar") || fileName === "debian-binary") {
 			// Skip
 		} else {
-			console.warn('File', fileName, 'not supported; skipping')
+			console.warn("File", fileName, "not supported; skipping")
 		}
 	}
 
@@ -130,15 +130,15 @@ async function getMetaForURL(url) {
 	meta.Size = data.length
 
 	// Calculate MD5sum of package
-	meta.MD5sum = crypto.createHash('md5').update(data).digest('hex')
+	meta.MD5sum = crypto.createHash("md5").update(data).digest("hex")
 
 	meta.Filename = `api/deb/${meta.MD5sum}.deb`
 
 	// Calculate SHA1 of package
-	meta.SHA1 = crypto.createHash('sha1').update(data).digest('hex')
+	meta.SHA1 = crypto.createHash("sha1").update(data).digest("hex")
 
 	// Calculate SHA256 of package
-	meta.SHA256 = crypto.createHash('sha256').update(data).digest('hex')
+	meta.SHA256 = crypto.createHash("sha256").update(data).digest("hex")
 
 	return meta
 }
