@@ -3,7 +3,7 @@ import Depiction from "../components/Depiction"
 export default function ColorfulLines() {
 	return (
 		<Depiction
-			name="ColorfulLines"
+			name="Colorful Lines"
 			github="https://github.com/YulkyTulky/ColorfulLines"
 			subtitle="Customize the scrollbar and cursor!"
 		>
