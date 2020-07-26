@@ -72,7 +72,7 @@ export default function Depiction({ children, name, subtitle, github }) {
 			<Links>
 				{[
 					{ icon: "/assets/link-icons/GitHub.png", label: "GitHub", href: github },
-					{ icon: "/assets/link-icons/Discord.png", label: "Discord", href: "https://discord.gg/gbzhzV" }
+					{ icon: "/assets/link-icons/Discord.png", label: "Discord", href: "https://discord.gg/Z8hqzXY" }
 				]}
 			</Links>
 		</Page>

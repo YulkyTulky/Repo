@@ -6,6 +6,7 @@ exports.packages = [
 	"https://github.com/YulkyTulky/ColorfulLines/releases/download/v1.1/com.yulkytulky.colorfullines_1.1_iphoneos-arm.deb",
 	"https://github.com/YulkyTulky/ColorfulLines/releases/download/v1.2/com.yulkytulky.colorfullines_1.2_iphoneos-arm.deb",
 	"https://github.com/YulkyTulky/ColorfulLines/releases/download/v1.2.1/com.yulkytulky.colorfullines_1.2.1_iphoneos-arm.deb",
+	"https://github.com/YulkyTulky/ColorfulLines/releases/download/v1.3/com.yulkytulky.colorfullines_1.3_iphoneos-arm.deb",
 
 	"https://github.com/YulkyTulky/Actify/releases/download/v1.2/com.yulkytulky.actify_1.2_iphoneos-arm.deb",
 
@@ -35,7 +36,7 @@ exports.packages = [
 ]
 
 exports.icons = {
-	"Colorful Lines": "assets/Colorful-Lines/icon.png",
+	ColorfulLines: "assets/ColorfulLines/icon.png",
 	Actify: "assets/Actify/icon.png",
 	InstaNotAStalker: "assets/InstaNotAStalker/icon.png",
 	YoutubeBGPlayback: "assets/YoutubeBGPlayback/icon.png",
