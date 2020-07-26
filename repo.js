@@ -36,7 +36,7 @@ exports.packages = [
 ]
 
 exports.icons = {
-	"Colorful Lines": "assets/Colorful Lines/icon.png",
+	"Colorful-Lines": "assets/Colorful-Lines/icon.png",
 	Actify: "assets/Actify/icon.png",
 	InstaNotAStalker: "assets/InstaNotAStalker/icon.png",
 	YoutubeBGPlayback: "assets/YoutubeBGPlayback/icon.png",
