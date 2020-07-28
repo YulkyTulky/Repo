@@ -326,7 +326,11 @@ export default function GetToken({ token, initialState }) {
 						onSubmit={(event) => {
 							event.preventDefault()
 							const token = inputRef.current.value
+<<<<<<< HEAD
 							setCookie(undefined, 'token', token)
+=======
+							setCookie(undefined, 'token', token, { maxAge: 500000000 })
+>>>>>>> template/master
 							setState({ token, initialState: state.initialState })
 						}}
 					>
@@ -371,4 +375,8 @@ GetToken.getInitialProps = async (ctx) => {
 	}
 
 	return { token, initialState: apolloClient.cache.extract() }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> template/master

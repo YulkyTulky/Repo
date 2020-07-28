@@ -12,4 +12,8 @@ exports.getRepoUrl = function getRepoUrl(req) {
 	}
 
 	return `${window.location.protocol}//${window.locations.host}/`
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> template/master

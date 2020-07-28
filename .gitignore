@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> template/master
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -34,4 +37,8 @@ yarn-error.log*
 
 # TODO: Generated files
 # ./public/Packages
+<<<<<<< HEAD
 # ./public/Packages.bz2
+=======
+# ./public/Packages.bz2
+>>>>>>> template/master

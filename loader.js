@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const crypto = require("crypto")
 const fs = require("fs")
 const path = require("path")
@@ -12,13 +13,33 @@ const { urlRegexp } = require("./utils")
 
 // Create node_modules/.cache folder
 const cacheFolder = path.join(__dirname, "node_modules", ".cache")
+=======
+const crypto = require('crypto')
+const fs = require('fs')
+const path = require('path')
+const stream = require('stream')
+
+const ar = require('ar')
+const axios = require('axios')
+const gunzipMaybe = require('gunzip-maybe')
+const tar = require('tar-stream')
+
+const { urlRegexp } = require('./utils')
+
+// Create node_modules/.cache folder
+const cacheFolder = path.join(__dirname, 'node_modules', '.cache')
+>>>>>>> template/master
 if (!fs.existsSync(cacheFolder)) {
 	fs.mkdirSync(cacheFolder)
 }
 
 // Load node_modules/.cache/urlsLoader.json
 const cacheVersion = 2
+<<<<<<< HEAD
 const cacheFile = path.join(__dirname, "node_modules", ".cache", "urlsLoader.json")
+=======
+const cacheFile = path.join(__dirname, 'node_modules', '.cache', 'urlsLoader.json')
+>>>>>>> template/master
 function getCacheFileContents() {
 	const emptyCache = {
 		version: cacheVersion,
@@ -29,7 +50,11 @@ function getCacheFileContents() {
 		try {
 			const cacheFileContents = require(cacheFile)
 			if (cacheFileContents.version !== cacheVersion) return emptyCache
+<<<<<<< HEAD
 			if (typeof cacheFileContents.cache !== "object") return emptyCache
+=======
+			if (typeof cacheFileContents.cache !== 'object') return emptyCache
+>>>>>>> template/master
 
 			return cacheFileContents
 		} catch (error) {
@@ -69,6 +94,7 @@ function extractControlTarGunzipMaybe(data) {
 
 		const extract = tar.extract()
 
+<<<<<<< HEAD
 		extract.on("entry", function (header, stream, next) {
 			if (header.name === "./control") {
 				const data = []
@@ -76,6 +102,15 @@ function extractControlTarGunzipMaybe(data) {
 					data.push(chunk)
 				})
 				stream.on("end", function () {
+=======
+		extract.on('entry', function (header, stream, next) {
+			if (header.name === './control') {
+				const data = []
+				stream.on('data', (chunk) => {
+					data.push(chunk)
+				})
+				stream.on('end', function () {
+>>>>>>> template/master
 					resolve(Buffer.concat(data).toString())
 				})
 				stream.resume()
@@ -84,8 +119,13 @@ function extractControlTarGunzipMaybe(data) {
 			}
 		})
 
+<<<<<<< HEAD
 		extract.on("finish", function () {
 			reject(new Error("control file missing"))
+=======
+		extract.on('finish', function () {
+			reject(new Error('control file missing'))
+>>>>>>> template/master
 		})
 
 		readableStream.pipe(gunzipMaybe()).pipe(extract)
@@ -106,7 +146,11 @@ function convertControlToObject(control) {
 }
 
 async function getMetaForURL(url) {
+<<<<<<< HEAD
 	const { data } = await axios.get(url, { responseType: "arraybuffer" })
+=======
+	const { data } = await axios.get(url, { responseType: 'arraybuffer' })
+>>>>>>> template/master
 
 	const archive = new ar.Archive(data)
 
@@ -114,12 +158,21 @@ async function getMetaForURL(url) {
 
 	for (const file of archive.getFiles()) {
 		const fileName = file.name()
+<<<<<<< HEAD
 		if (fileName.startsWith("control.tar")) {
 			Object.assign(meta, convertControlToObject(await extractControlTarGunzipMaybe(file.fileData())))
 		} else if (fileName.startsWith("data.tar") || fileName === "debian-binary") {
 			// Skip
 		} else {
 			console.warn("File", fileName, "not supported; skipping")
+=======
+		if (fileName.startsWith('control.tar')) {
+			Object.assign(meta, convertControlToObject(await extractControlTarGunzipMaybe(file.fileData())))
+		} else if (fileName.startsWith('data.tar') || fileName === 'debian-binary') {
+			// Skip
+		} else {
+			console.warn('File', fileName, 'not supported; skipping')
+>>>>>>> template/master
 		}
 	}
 
@@ -130,15 +183,26 @@ async function getMetaForURL(url) {
 	meta.Size = data.length
 
 	// Calculate MD5sum of package
+<<<<<<< HEAD
 	meta.MD5sum = crypto.createHash("md5").update(data).digest("hex")
+=======
+	meta.MD5sum = crypto.createHash('md5').update(data).digest('hex')
+>>>>>>> template/master
 
 	meta.Filename = `api/deb/${meta.MD5sum}.deb`
 
 	// Calculate SHA1 of package
+<<<<<<< HEAD
 	meta.SHA1 = crypto.createHash("sha1").update(data).digest("hex")
 
 	// Calculate SHA256 of package
 	meta.SHA256 = crypto.createHash("sha256").update(data).digest("hex")
+=======
+	meta.SHA1 = crypto.createHash('sha1').update(data).digest('hex')
+
+	// Calculate SHA256 of package
+	meta.SHA256 = crypto.createHash('sha256').update(data).digest('hex')
+>>>>>>> template/master
 
 	return meta
 }
@@ -176,4 +240,8 @@ export const md5Table = ${JSON.stringify(md5Table)};
 export const name = ${JSON.stringify(repo.name)};
 export const description = ${JSON.stringify(repo.description)};
 export const icons = ${JSON.stringify(repo.icons)};`
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> template/master
