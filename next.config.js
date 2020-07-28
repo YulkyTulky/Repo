@@ -14,10 +14,7 @@ module.exports = {
 		},
 	},
 }
-<<<<<<< HEAD
 
 devIndicators: {
     autoPrerender: false
 }
-=======
->>>>>>> template/master
