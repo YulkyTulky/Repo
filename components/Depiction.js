@@ -1,16 +1,8 @@
-<<<<<<< HEAD
-import Links from "./Links"
-import Page from "./Page"
-import Section, { SectionPadding } from "./Section"
-
-import { icons } from "../loader!../repo"
-=======
 import Links from './Links'
 import Page from './Page'
 import Section, { SectionPadding } from './Section'
 
 import { icons } from '../loader!../repo'
->>>>>>> template/master
 
 export default function Depiction({ children, name, subtitle, github }) {
 	return (
@@ -43,7 +35,6 @@ export default function Depiction({ children, name, subtitle, github }) {
 					margin: 0;
 					font-weight: 400;
 				}
-<<<<<<< HEAD
 
 				h1 {
 					text-decoration: underline;
@@ -67,8 +58,6 @@ export default function Depiction({ children, name, subtitle, github }) {
 						background-position: 100% 0;
 					}
 				}
-=======
->>>>>>> template/master
 			`}</style>
 			<div className="title">
 				<img src={icons[name]} alt={`${name} icon`} />
@@ -82,15 +71,8 @@ export default function Depiction({ children, name, subtitle, github }) {
 			</Section>
 			<Links>
 				{[
-<<<<<<< HEAD
 					{ icon: "/assets/link-icons/GitHub.png", label: "GitHub", href: github },
 					{ icon: "/assets/link-icons/Discord.png", label: "Discord", href: "https://discord.gg/Z8hqzXY" }
-=======
-					{ icon: '/assets/link-icons/PayPal.png', label: 'PayPal', href: 'https://www.paypal.me/' },
-					{ icon: '/assets/link-icons/Discord.png', label: 'Discord', href: 'https://discord.gg/' },
-					{ icon: '/assets/link-icons/Twitter.png', label: 'Twitter', href: 'https://twitter.com/' },
-					{ icon: '/assets/link-icons/GitHub.png', label: 'GitHub', href: github },
->>>>>>> template/master
 				]}
 			</Links>
 		</Page>

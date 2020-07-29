@@ -24,8 +24,4 @@ export default (req, res) => {
 
 	res.setHeader('Cache-Control', 's-maxage=31536000')
 	res.end(result.join('\n\n'))
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> template/master
