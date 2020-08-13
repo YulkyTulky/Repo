@@ -11,6 +11,7 @@ export default function SafariFind() {
 			<p>
 			Safari's native "find" feature is hidden and annoying to use ... but SafariFind fixes this!
 			With SafariFind, simply hold down the share button (in the center of the bottom toolbar) to search for text!
+			Now fully compatible with SafariPlus!
 			</p>
 
 			<p>

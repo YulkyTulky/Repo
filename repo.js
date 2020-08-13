@@ -27,6 +27,7 @@ exports.packages = [
 	"https://github.com/YulkyTulky/TapTapTipTapTime/releases/download/v1.0/com.yulkytulky.taptaptiptaptime_1.0_iphoneos-arm.deb",
 
 	"https://github.com/YulkyTulky/SafariFind/releases/download/v1.0/com.yulkytulky.safarifind_1.0_iphoneos-arm.deb",
+	"https://github.com/YulkyTulky/SafariFind/releases/download/v1.1/com.yulkytulky.safarifind_1.1_iphoneos-arm.deb",
 
 	"https://github.com/YulkyTulky/NotesFind/releases/download/v1.0/com.yulkytulky.notesfind_1.0_iphoneos-arm.deb",
 
