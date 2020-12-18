@@ -7,7 +7,7 @@ export default function iFunnier() {
 			github="https://github.com/EamonTracey/iFunnier"
 			subtitle="Block ads, save any content (no watermark), and more on iFunny!"
 		>
-			
+
 			<p>
 			iFunnier enhances your iFunny experience!
 			</p>
@@ -24,7 +24,7 @@ export default function iFunnier() {
 					Save videos
 				</li>
                 <li>
-					Easily access your bearer authorzation token
+					Easily access your bearer authorization token
 				</li>
                 <li>
 					Beautiful preferences pane
