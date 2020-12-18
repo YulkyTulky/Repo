@@ -24,7 +24,7 @@ export default function iFunnier() {
 					Save videos
 				</li>
                 <li>
-					Easily access your bearer authorzation token
+					Easily access your bearer authorization token
 				</li>
                 <li>
 					Beautiful preferences pane
