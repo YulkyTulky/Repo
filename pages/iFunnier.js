@@ -7,7 +7,7 @@ export default function iFunnier() {
 			github="https://github.com/EamonTracey/iFunnier"
 			subtitle="Block ads, save any content (no watermark), and more on iFunny!"
 		>
-			
+
 			<p>
 			iFunnier enhances your iFunny experience!
 			</p>
