@@ -33,7 +33,9 @@ exports.packages = [
 
 	"https://github.com/YulkyTulky/FLEXivator/releases/download/v1.0/com.yulkytulky.flexivator_1.0_iphoneos-arm.deb",
 
-	"https://github.com/YulkyTulky/Crescendo/releases/download/v1.0/com.yulkytulky.crescendo_1.0_iphoneos-arm.deb"
+	"https://github.com/YulkyTulky/Crescendo/releases/download/v1.0/com.yulkytulky.crescendo_1.0_iphoneos-arm.deb",
+
+	"https://github.com/EamonTracey/iFunnier/releases/download/v1.0/com.eamontracey.ifunnier_1.0_iphoneos-arm.deb"
 
 	
 ]
@@ -51,5 +53,6 @@ exports.icons = {
 	SafariFind: "assets/SafariFind/icon.png",
 	NotesFind: "assets/NotesFind/icon.png",
 	FLEXivator: "assets/FLEXivator/icon.png",
-	Crescendo: "assets/Crescendo/icon.png"
+	Crescendo: "assets/Crescendo/icon.png",
+	iFunnier: "assets/iFunnier/icon.png"
 }
