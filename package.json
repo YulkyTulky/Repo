@@ -23,7 +23,7 @@
 	},
 	"devDependencies": {
 		"ar": "^0.0.1",
-		"axios": "^0.19.2",
+		"axios": "^0.21.1",
 		"gunzip-maybe": "^1.4.2",
 		"tar-stream": "^2.1.2"
 	}
