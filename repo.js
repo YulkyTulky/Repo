@@ -2,6 +2,7 @@ exports.name = "YulkyTulky"
 exports.description = "YulkyTulky's Tweak Repository"
 
 exports.packages = [
+
 	"https://github.com/YulkyTulky/ColorfulLines/releases/download/v1.0.0/com.yulkytulky.colorfullines_1.0.0_iphoneos-arm.deb",
 	"https://github.com/YulkyTulky/ColorfulLines/releases/download/v1.1/com.yulkytulky.colorfullines_1.1_iphoneos-arm.deb",
 	"https://github.com/YulkyTulky/ColorfulLines/releases/download/v1.2/com.yulkytulky.colorfullines_1.2_iphoneos-arm.deb",
@@ -35,8 +36,8 @@ exports.packages = [
 
 	"https://github.com/YulkyTulky/Crescendo/releases/download/v1.0/com.yulkytulky.crescendo_1.0_iphoneos-arm.deb",
 
-	"https://github.com/EamonTracey/iFunnier/releases/download/v1.0/com.eamontracey.ifunnier_1.0_iphoneos-arm.deb"
-
+	"https://github.com/EamonTracey/iFunnier/releases/download/v1.0/com.eamontracey.ifunnier_1.0_iphoneos-arm.deb",
+	"https://github.com/EamonTracey/iFunnier/releases/download/v1.1/com.eamontracey.ifunnier_1.1_iphoneos-arm.deb"
 	
 ]
 
