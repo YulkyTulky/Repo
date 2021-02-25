@@ -37,7 +37,10 @@ exports.packages = [
 	"https://github.com/YulkyTulky/Crescendo/releases/download/v1.0/com.yulkytulky.crescendo_1.0_iphoneos-arm.deb",
 
 	"https://github.com/EamonTracey/iFunnier/releases/download/v1.0/com.eamontracey.ifunnier_1.0_iphoneos-arm.deb",
-	"https://github.com/EamonTracey/iFunnier/releases/download/v1.1/com.eamontracey.ifunnier_1.1_iphoneos-arm.deb"
+	"https://github.com/EamonTracey/iFunnier/releases/download/v1.1/com.eamontracey.ifunnier_1.1_iphoneos-arm.deb",
+
+	"https://github.com/EamonTracey/SecretShot/releases/download/v1.0/com.eamontracey.secretshot_1.0_iphoneos-arm.deb",
+	"https://github.com/EamonTracey/SecretShot/releases/download/v1.1/com.eamontracey.secretshot_1.1_iphoneos-arm.deb"
 	
 ]
 
@@ -55,5 +58,6 @@ exports.icons = {
 	NotesFind: "assets/NotesFind/icon.png",
 	FLEXivator: "assets/FLEXivator/icon.png",
 	Crescendo: "assets/Crescendo/icon.png",
-	iFunnier: "assets/iFunnier/icon.png"
+	iFunnier: "assets/iFunnier/icon.png",
+	SecretShot: "assets/SecretShot/icon.png"
 }
