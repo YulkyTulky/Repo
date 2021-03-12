@@ -38,6 +38,7 @@ exports.packages = [
 
 	"https://github.com/EamonTracey/iFunnier/releases/download/v1.0/com.eamontracey.ifunnier_1.0_iphoneos-arm.deb",
 	"https://github.com/EamonTracey/iFunnier/releases/download/v1.1/com.eamontracey.ifunnier_1.1_iphoneos-arm.deb",
+	"https://github.com/EamonTracey/iFunnier/releases/download/v1.2/com.eamontracey.ifunnier_1.2_iphoneos-arm.deb",
 
 	"https://github.com/EamonTracey/SecretShot/releases/download/v1.0/com.eamontracey.secretshot_1.0_iphoneos-arm.deb",
 	"https://github.com/EamonTracey/SecretShot/releases/download/v1.1/com.eamontracey.secretshot_1.1_iphoneos-arm.deb"
